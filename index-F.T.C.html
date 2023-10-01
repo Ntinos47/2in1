@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-F.T.C.css">
+  </head>
+  <body>
+    <div class="con1">
+      <div class=" con2">
+
+        <a href="index.html"><img class="go-back" src="img/go-back.png"></a>
+
+        <div class="move">
+          <p class="heads">Heads</p>
+          <p class="tails">Tails</p>
+        </div>
+
+        <div class="btn">
+          <button class="btn1" onclick="
+            plGame('Heads');
+          ">
+          <img src="img/Penny_Obv_Unc_D.png" class="move-icon">
+        </button>
+
+
+          <button class="btn1" onclick="
+            plGame('Tails');  
+          ">
+            <img src="img/2005_Penny_Rev_Unc_D.png" class="move-icon">
+          </button>
+
+          <p class="js-plMove">Your pick: --------</p>
+          <p class="js-compMove">Coin flips at: --------</p>
+
+          <hr style="width:85%; height: 2px" color="black">
+
+          <div class="container">
+            <p class="js-wins">Wins: -</p>
+            <p class="js-losses">Losses: -</p>
+          </div>
+          
+          <div class="reset">
+            <p>Reset:</p>
+            <button class="btn3" onclick="
+              guess = ''
+              compMove = ''
+              score1.wins1 = 0;
+              score1.losses1 = 0;
+              localStorage.removeItem('score1');
+              updateScoreElement1()
+            "><img src="img/reset-icon.png" class="reset-icon"></button>
+          </div>
+
+
+          
+          
+      </div>
+    </div>
+</div>
+    <script src="index-F.T.C.js"></script>
+  </body>
+</html>
